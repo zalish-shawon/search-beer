@@ -8,10 +8,8 @@ const BeerCard = ({ beer }) => {
                 </figure>
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{beer.name}</h2>
-                    <p>{beer.tagline}</p>
-                    <div className="card-actions">
-                        <button className="btn btn-primary">Buy Now</button>
-                    </div>
+                    <p><span className="font-semibold">Tagline:</span> {beer.tagline}</p>
+                    <p><span className="font-semibold">Description: </span>{beer.description.slice(0,60)}</p>
                 </div>
             </div>
         </div>
