@@ -68,7 +68,7 @@ function App() {
               <h1 className=' text-gray-500 mt-14 font-semibold'>No results found</h1>
           </div>
           :
-          <div className='mt-10 grid grid-cols-4 gap-5'>
+          <div className='mt-10 grid grid-cols-1 lg:grid-cols-4 gap-5'>
            {
              beer.map(beer => <BeerCard key={beer.id} beer={beer}></BeerCard>)
            }
@@ -76,7 +76,7 @@ function App() {
         }
       </div>
     </div>
-    <div>
+    <div className='mt-5'>
       <Footer></Footer>
     </div>
     </div>
